@@ -56,15 +56,47 @@
 		2C68377128237A0800251070 /* iosAssessment3 */ = {
 			isa = PBXGroup;
 			children = (
+				2C68378928237B6800251070 /* model */,
+				2C68378828237B6100251070 /* service */,
+				2C68378728237B5900251070 /* contoller */,
+				2C68378628237B5300251070 /* view */,
 				2C68377228237A0800251070 /* AppDelegate.swift */,
 				2C68377428237A0800251070 /* SceneDelegate.swift */,
 				2C68377628237A0800251070 /* ViewController.swift */,
-				2C68377828237A0800251070 /* Main.storyboard */,
 				2C68377B28237A0A00251070 /* Assets.xcassets */,
 				2C68377D28237A0A00251070 /* LaunchScreen.storyboard */,
 				2C68378028237A0A00251070 /* Info.plist */,
 			);
 			path = iosAssessment3;
+			sourceTree = "<group>";
+		};
+		2C68378628237B5300251070 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2C68377828237A0800251070 /* Main.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		2C68378728237B5900251070 /* contoller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = contoller;
+			sourceTree = "<group>";
+		};
+		2C68378828237B6100251070 /* service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		2C68378928237B6800251070 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
