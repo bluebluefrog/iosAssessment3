@@ -56,6 +56,7 @@
 		2C68377128237A0800251070 /* iosAssessment3 */ = {
 			isa = PBXGroup;
 			children = (
+				2C68377828237A0800251070 /* Main.storyboard */,
 				2C68378928237B6800251070 /* model */,
 				2C68378828237B6100251070 /* service */,
 				2C68378728237B5900251070 /* contoller */,
@@ -73,7 +74,6 @@
 		2C68378628237B5300251070 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				2C68377828237A0800251070 /* Main.storyboard */,
 			);
 			path = view;
 			sourceTree = "<group>";
