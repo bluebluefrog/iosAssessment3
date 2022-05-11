@@ -4,17 +4,25 @@ import UIKit
 
 class FoodVC: UIViewController {
     
+    var diningType:String = ""
     var isFood:Bool=true
     var foodList:[Food]=[]
     let exerciseList:[Exercise]=[]
 
+//    @IBOutlet weak var button: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        foodList.append(Food(foodname:"Beef",calories: 100))
-        foodList.append(Food(foodname:"Duck",calories: 100))
-        foodList.append(Food(foodname:"Chicken",calories: 100))
-        foodList.append(Food(foodname:"Egg",calories: 100))
-        foodList.append(Food(foodname:"Chips",calories: 100))
+        foodList.append(Food(foodname:"1号",calories: 100,img: UIImage(named:"1.jpg")!))
+        foodList.append(Food(foodname:"2号",calories: 100,img: UIImage(named:"2.jpg")!))
+        foodList.append(Food(foodname:"3号",calories: 100,img: UIImage(named:"3.jpg")!))
+        foodList.append(Food(foodname:"4号",calories: 100,img: UIImage(named:"4.jpg")!))
+        foodList.append(Food(foodname:"5号",calories: 100,img: UIImage(named:"5.jpg")!))
+        foodList.append(Food(foodname:"6号",calories: 100,img: UIImage(named:"6.jpg")!))
+        foodList.append(Food(foodname:"7号",calories: 100,img: UIImage(named:"7.jpg")!))
+        foodList.append(Food(foodname:"8号",calories: 100,img: UIImage(named:"8.jpg")!))
+        foodList.append(Food(foodname:"9号",calories: 100,img: UIImage(named:"9.jpg")!))
+        foodList.append(Food(foodname:"10号",calories: 100,img: UIImage(named:"10.jpg")!))
     }
 }
 
@@ -37,7 +45,7 @@ extension FoodVC:UITableViewDataSource {
         
         let cell:UITableViewCell = UITableViewCell(style:UITableViewCell.CellStyle.subtitle, reuseIdentifier: nil)
         
-        cell.imageView!.image = UIImage(named:"152922529.jpg")
+        cell.imageView!.image = foodList[indexPath.row].img
         cell.textLabel?.text=foodList[indexPath.row].foodname
         cell.detailTextLabel?.text=String(foodList[indexPath.row].calories)
         
@@ -49,7 +57,5 @@ extension FoodVC:UITableViewDelegate{
 
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             tableView.deselectRow(at: indexPath, animated: true);
-
         }
-
     }
