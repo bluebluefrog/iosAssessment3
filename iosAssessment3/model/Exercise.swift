@@ -10,9 +10,9 @@ class  Exercise{
         
     var exerciseName:String
     var calories:Int
-    var img:String
+    var img:UIImage
        
-    init(exerciseName:String,calories:Int,img:String) {
+    init(exerciseName:String,calories:Int,img:UIImage) {
             self.exerciseName=exerciseName
             self.calories=calories
             self.img=img

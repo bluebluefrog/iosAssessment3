@@ -7,12 +7,11 @@ class FoodVC: UIViewController {
     var diningType:String = ""
     var isFood:Bool=true
     var foodList:[Food]=[]
-    let exerciseList:[Exercise]=[]
-
-//    @IBOutlet weak var button: UIButton!
+    var exerciseList:[Exercise]=[]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Food data
         foodList.append(Food(foodname:"Egg",calories: 167,img: UIImage(named:"Egg.jpg")!))
         foodList.append(Food(foodname:"Chicken breast",calories: 133,img: UIImage(named:"Chicken breast.jpg")!))
         foodList.append(Food(foodname:"beef",calories: 106,img: UIImage(named:"Beef.jpg")!))
@@ -34,6 +33,8 @@ class FoodVC: UIViewController {
         foodList.append(Food(foodname:"Cheese",calories: 349,img: UIImage(named:"Cheese.jpg")!))
         foodList.append(Food(foodname:"Bread",calories: 265,img: UIImage(named:"Bread.jpg")!))
         foodList.append(Food(foodname:"Pasta",calories: 131,img: UIImage(named:"Pasta.jpg")!))
+        //Exercise data
+        exerciseList.append(Exercise(exerciseName: "test", calories: 1, img: UIImage(named:"Pasta.jpg")!))
        
     }
 }
@@ -57,16 +58,21 @@ extension FoodVC:UITableViewDataSource {
         
         let cell:UITableViewCell = UITableViewCell(style:UITableViewCell.CellStyle.subtitle, reuseIdentifier: nil)
         
+        if(isFood){
         cell.imageView!.image = foodList[indexPath.row].img
         cell.textLabel?.text=foodList[indexPath.row].foodname
-        cell.detailTextLabel?.text=String(foodList[indexPath.row].calories)
-        
+        cell.detailTextLabel?.text=String(foodList[indexPath.row].calories)+" calories"
+        }else{
+            cell.imageView!.image = exerciseList[indexPath.row].img
+            cell.textLabel?.text=exerciseList[indexPath.row].exerciseName
+            cell.detailTextLabel?.text=String(exerciseList[indexPath.row].calories)+" calories"
+        }
         return cell
     }
 }
 
 extension FoodVC:UITableViewDelegate{
-
+    
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             tableView.deselectRow(at: indexPath, animated: true);
         }
