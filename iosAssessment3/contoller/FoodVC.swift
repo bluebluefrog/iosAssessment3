@@ -61,11 +61,11 @@ extension FoodVC:UITableViewDataSource {
         if(isFood){
         cell.imageView!.image = foodList[indexPath.row].img
         cell.textLabel?.text=foodList[indexPath.row].foodname
-        cell.detailTextLabel?.text=String(foodList[indexPath.row].calories)+" calories"
+        cell.detailTextLabel?.text=String(foodList[indexPath.row].calories)+" calories"+"/100g"
         }else{
             cell.imageView!.image = exerciseList[indexPath.row].img
             cell.textLabel?.text=exerciseList[indexPath.row].exerciseName
-            cell.detailTextLabel?.text=String(exerciseList[indexPath.row].calories)+" calories"
+            cell.detailTextLabel?.text=String(exerciseList[indexPath.row].calories)+" calories"+"/30min"
         }
         return cell
     }
@@ -75,5 +75,10 @@ extension FoodVC:UITableViewDelegate{
     
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             tableView.deselectRow(at: indexPath, animated: true);
+            
+            let vc = storyboard?.instantiateViewController(identifier: "HomeVC") as! HomeVC
+            vc.currentTotalCalories+=foodList[indexPath.row].calories
+            self.navigationController?.pushViewController(vc, animated: true)
+            vc.navigationItem.setHidesBackButton(true, animated: true)
         }
     }
