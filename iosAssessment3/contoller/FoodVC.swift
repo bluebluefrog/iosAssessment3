@@ -33,9 +33,21 @@ class FoodVC: UIViewController {
         foodList.append(Food(foodname:"Cheese",calories: 349,img: UIImage(named:"Cheese.jpg")!))
         foodList.append(Food(foodname:"Bread",calories: 265,img: UIImage(named:"Bread.jpg")!))
         foodList.append(Food(foodname:"Pasta",calories: 131,img: UIImage(named:"Pasta.jpg")!))
+        
         //Exercise data
-        exerciseList.append(Exercise(exerciseName: "test", calories: 1, img: UIImage(named:"Pasta.jpg")!))
-       
+        exerciseList.append(Exercise(exerciseName: "Bicycle", calories: 276, img: UIImage(named:"bicycle.jpg")!))
+        exerciseList.append(Exercise(exerciseName: "Boxing", calories: 450, img: UIImage(named:"boxing.jpg")!))
+        exerciseList.append(Exercise(exerciseName: "Dance", calories: 300, img: UIImage(named:"dance.jpg")!))
+        exerciseList.append(Exercise(exerciseName: "Football", calories: 469, img: UIImage(named:"football.jpg")!))
+        exerciseList.append(Exercise(exerciseName: "Golf", calories: 186, img: UIImage(named:"golf.jpg")!))
+        exerciseList.append(Exercise(exerciseName: "Jump", calories: 448, img: UIImage(named:"jump.jpg")!))
+        exerciseList.append(Exercise(exerciseName: "Run", calories: 655, img: UIImage(named:"run.jpg")!))
+        exerciseList.append(Exercise(exerciseName: "Sit-up", calories: 480, img: UIImage(named:"sit-up.jpg")!))
+        exerciseList.append(Exercise(exerciseName: "Skiing", calories: 354, img: UIImage(named:"skiing.jpg")!))
+        exerciseList.append(Exercise(exerciseName: "Snooker", calories: 300, img: UIImage(named:"snooker.jpg")!))
+        exerciseList.append(Exercise(exerciseName: "Swimming", calories: 1036, img: UIImage(named:"swimming.jpg")!))
+        exerciseList.append(Exercise(exerciseName: "Tennis", calories: 352, img: UIImage(named:"tennis.jpg")!))
+        exerciseList.append(Exercise(exerciseName: "Walk", calories: 255, img: UIImage(named:"walk.jpg")!))
     }
 }
 
@@ -65,7 +77,8 @@ extension FoodVC:UITableViewDataSource {
         }else{
             cell.imageView!.image = exerciseList[indexPath.row].img
             cell.textLabel?.text=exerciseList[indexPath.row].exerciseName
-            cell.detailTextLabel?.text=String(exerciseList[indexPath.row].calories)+" calories"+"/30min"
+            cell.detailTextLabel?.text=String(exerciseList[indexPath.row].calories)+" calories"+"/60mins"
+
         }
         return cell
     }
