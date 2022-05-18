@@ -88,10 +88,13 @@ extension FoodVC:UITableViewDelegate{
     
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             tableView.deselectRow(at: indexPath, animated: true);
-            
+            if(isFood){
             let vc = storyboard?.instantiateViewController(identifier: "HomeVC") as! HomeVC
             vc.currentTotalCalories+=foodList[indexPath.row].calories
             self.navigationController?.pushViewController(vc, animated: true)
             vc.navigationItem.setHidesBackButton(true, animated: true)
+            }else{
+                //when is not food
+            }
         }
     }
