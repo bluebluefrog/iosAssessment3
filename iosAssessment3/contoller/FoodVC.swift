@@ -4,17 +4,38 @@ import UIKit
 
 class FoodVC: UIViewController {
     
+    var diningType:String = ""
     var isFood:Bool=true
     var foodList:[Food]=[]
-    let exerciseList:[Exercise]=[]
-
+    var exerciseList:[Exercise]=[]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        foodList.append(Food(foodname:"Beef",calories: 100))
-        foodList.append(Food(foodname:"Duck",calories: 100))
-        foodList.append(Food(foodname:"Chicken",calories: 100))
-        foodList.append(Food(foodname:"Egg",calories: 100))
-        foodList.append(Food(foodname:"Chips",calories: 100))
+        //Food data
+        foodList.append(Food(foodname:"Egg",calories: 167,img: UIImage(named:"Egg.jpg")!))
+        foodList.append(Food(foodname:"Chicken breast",calories: 133,img: UIImage(named:"Chicken breast.jpg")!))
+        foodList.append(Food(foodname:"beef",calories: 106,img: UIImage(named:"Beef.jpg")!))
+        foodList.append(Food(foodname:"Pork",calories: 395,img: UIImage(named:"Pork.jpg")!))
+        foodList.append(Food(foodname:"fish",calories: 113,img: UIImage(named:"Fish.jpg")!))
+        foodList.append(Food(foodname:"Shrimp",calories: 85,img: UIImage(named:"Shrimp.jpg")!))
+        foodList.append(Food(foodname:"Lamb",calories: 217,img: UIImage(named:"Lamb.jpg")!))
+        foodList.append(Food(foodname:"corn",calories: 71,img: UIImage(named:"Corn.jpg")!))
+        foodList.append(Food(foodname:"Pumpkin",calories: 74,img: UIImage(named:"Pumpkin.jpg")!))
+        foodList.append(Food(foodname:"Seaweed",calories: 16,img: UIImage(named:"Seaweed.jpg")!))
+        foodList.append(Food(foodname:"Mushroom",calories: 27,img: UIImage(named:"Mushroom.jpg")!))
+        foodList.append(Food(foodname:"Orange",calories: 43,img: UIImage(named:"Orange.jpg")!))
+        foodList.append(Food(foodname:"Grape",calories: 33,img: UIImage(named:"Grape.jpg")!))
+        foodList.append(Food(foodname:"Mango",calories: 36,img: UIImage(named:"Mango.jpg")!))
+        foodList.append(Food(foodname:"Apple",calories: 46,img: UIImage(named:"Apple.jpg")!))
+        foodList.append(Food(foodname:"Watermelon",calories: 25,img: UIImage(named:"Watermelon.jpg")!))
+        foodList.append(Food(foodname:"Peach",calories: 43,img: UIImage(named:"Peach.jpg")!))
+        foodList.append(Food(foodname:"Chips",calories: 536,img: UIImage(named:"Chips.jpg")!))
+        foodList.append(Food(foodname:"Cheese",calories: 349,img: UIImage(named:"Cheese.jpg")!))
+        foodList.append(Food(foodname:"Bread",calories: 265,img: UIImage(named:"Bread.jpg")!))
+        foodList.append(Food(foodname:"Pasta",calories: 131,img: UIImage(named:"Pasta.jpg")!))
+        //Exercise data
+        exerciseList.append(Exercise(exerciseName: "test", calories: 1, img: UIImage(named:"Pasta.jpg")!))
+       
     }
 }
 
@@ -37,19 +58,27 @@ extension FoodVC:UITableViewDataSource {
         
         let cell:UITableViewCell = UITableViewCell(style:UITableViewCell.CellStyle.subtitle, reuseIdentifier: nil)
         
-        cell.imageView!.image = UIImage(named:"152922529.jpg")
+        if(isFood){
+        cell.imageView!.image = foodList[indexPath.row].img
         cell.textLabel?.text=foodList[indexPath.row].foodname
-        cell.detailTextLabel?.text=String(foodList[indexPath.row].calories)
-        
+        cell.detailTextLabel?.text=String(foodList[indexPath.row].calories)+" calories"+"/100g"
+        }else{
+            cell.imageView!.image = exerciseList[indexPath.row].img
+            cell.textLabel?.text=exerciseList[indexPath.row].exerciseName
+            cell.detailTextLabel?.text=String(exerciseList[indexPath.row].calories)+" calories"+"/30min"
+        }
         return cell
     }
 }
 
 extension FoodVC:UITableViewDelegate{
-
+    
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             tableView.deselectRow(at: indexPath, animated: true);
-
+            
+            let vc = storyboard?.instantiateViewController(identifier: "HomeVC") as! HomeVC
+            vc.currentTotalCalories+=foodList[indexPath.row].calories
+            self.navigationController?.pushViewController(vc, animated: true)
+            vc.navigationItem.setHidesBackButton(true, animated: true)
         }
-
     }
