@@ -11,6 +11,14 @@ class HomeVC: UIViewController {
     
     @IBOutlet weak var breakfastCaloriesLabel: UILabel!
     
+    @IBOutlet weak var lunchCaloriesLabel: UILabel!
+    
+    @IBOutlet weak var dinnerCaloriesLabel: UILabel!
+    
+    @IBOutlet weak var snackCaloriesLabel: UILabel!
+    
+    @IBOutlet weak var excriciseCosumeCaloriesLabel: UILabel!
+    
     @IBOutlet weak var ErrorLabel: UILabel!
     
     var availableCalories:Int=0
@@ -44,25 +52,29 @@ class HomeVC: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier=="breackfastCalories"{
+        if(segue.identifier=="breackfastCalories"){
             let foodVC=segue.destination as! FoodVC
             foodVC.diningType="breakfast"
         }
-        if segue.identifier=="lunchCalories"{
+        if(segue.identifier=="lunchCalories"){
             let foodVC=segue.destination as! FoodVC
             foodVC.diningType="lunch"
         }
-        if segue.identifier=="dinnerCalories"{
+        if(segue.identifier=="dinnerCalories"){
             let foodVC=segue.destination as! FoodVC
             foodVC.diningType="dinner"
         }
-        if segue.identifier=="snackCalories"{
+        if(segue.identifier=="snackCalories"){
             let foodVC=segue.destination as! FoodVC
             foodVC.diningType="snack"
         }
-        if segue.identifier=="excerciseCosume"{
+        if(segue.identifier=="excerciseCosume"){
             let foodVC=segue.destination as! FoodVC
             foodVC.isFood=false
+        }
+        if(segue.identifier=="userProfile"){
+            let userProfileVC=segue.destination as! UserProfileVC
+            userProfileVC.navigationItem.setHidesBackButton(true, animated: true)
         }
     }
     
