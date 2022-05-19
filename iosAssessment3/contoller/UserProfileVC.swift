@@ -38,7 +38,6 @@ class UserProfileVC:  UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier=="goUserDataEdit"){
             let userEditVC=segue.destination as! UserDataEditVC
-            userEditVC.navigationItem.setHidesBackButton(true, animated: true)
         }
         if(segue.identifier=="goHome"){
             let homeVC=segue.destination as! HomeVC

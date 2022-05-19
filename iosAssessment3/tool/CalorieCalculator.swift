@@ -13,9 +13,19 @@ class CalorieCalculator {
 
         var totalCalories:Int=0
         if(gender=="male"){
-            totalCalories = 10 * weight + 6 * height - 5 * age + 5
+            if(weight>target){
+                totalCalories = 10 * weight + 6 * height - 5 * age - 100
+            }
+            else if(target>weight){
+                totalCalories = 10 * weight + 6 * height - 5 * age + 200
+            }
         }else if(gender=="female"){
-            totalCalories = 10 * weight + 6 * height - 5 * age - 161
+            if(weight>target){
+                totalCalories = 10 * weight + 6 * height - 5 * age - 261
+            }
+            else if(target>weight){
+                totalCalories = 10 * weight + 6 * height - 5 * age + 61
+            }
         }
         return totalCalories
     }
