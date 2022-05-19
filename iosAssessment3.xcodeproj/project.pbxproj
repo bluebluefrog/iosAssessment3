@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C3509552834F59D0015ACC2 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3509542834F59D0015ACC2 /* UserData.swift */; };
+		2C3509642834F9390015ACC2 /* run.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C3509562834F9380015ACC2 /* run.jpg */; };
+		2C3509652834F9390015ACC2 /* dance.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C3509572834F9380015ACC2 /* dance.jpg */; };
+		2C3509662834F9390015ACC2 /* basketball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C3509582834F9380015ACC2 /* basketball.jpg */; };
+		2C3509672834F9390015ACC2 /* tennis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C3509592834F9380015ACC2 /* tennis.jpg */; };
+		2C3509682834F9390015ACC2 /* jump.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C35095A2834F9390015ACC2 /* jump.jpg */; };
+		2C3509692834F9390015ACC2 /* snooker.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C35095B2834F9390015ACC2 /* snooker.jpg */; };
+		2C35096A2834F9390015ACC2 /* bicycle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C35095C2834F9390015ACC2 /* bicycle.jpg */; };
+		2C35096B2834F9390015ACC2 /* swimming.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C35095D2834F9390015ACC2 /* swimming.jpg */; };
+		2C35096C2834F9390015ACC2 /* boxing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C35095E2834F9390015ACC2 /* boxing.jpg */; };
+		2C35096D2834F9390015ACC2 /* walk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C35095F2834F9390015ACC2 /* walk.jpg */; };
+		2C35096E2834F9390015ACC2 /* sit-up.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C3509602834F9390015ACC2 /* sit-up.jpg */; };
+		2C35096F2834F9390015ACC2 /* football.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C3509612834F9390015ACC2 /* football.jpg */; };
+		2C3509702834F9390015ACC2 /* skiing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C3509622834F9390015ACC2 /* skiing.jpg */; };
+		2C3509712834F9390015ACC2 /* golf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C3509632834F9390015ACC2 /* golf.jpg */; };
+		2C3509732834FC440015ACC2 /* UserDataEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3509722834FC440015ACC2 /* UserDataEditVC.swift */; };
+		2C3509752835444E0015ACC2 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3509742835444E0015ACC2 /* UserProfileVC.swift */; };
+		2C35097728361D580015ACC2 /* CalorieCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35097628361D580015ACC2 /* CalorieCalculator.swift */; };
 		2C5767632833C5BB006608A5 /* Pasta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C57674E2833C5BA006608A5 /* Pasta.jpg */; };
 		2C5767642833C5BB006608A5 /* Pumpkin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C57674F2833C5BA006608A5 /* Pumpkin.jpg */; };
 		2C5767652833C5BB006608A5 /* Chicken breast.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C5767502833C5BA006608A5 /* Chicken breast.jpg */; };
@@ -37,23 +55,27 @@
 		2C6837B1282B9A4300251070 /* FoodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6837B0282B9A4300251070 /* FoodVC.swift */; };
 		2C6837B3282BA47400251070 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6837B2282BA47400251070 /* Food.swift */; };
 		2C6837B5282BA55500251070 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6837B4282BA55500251070 /* Exercise.swift */; };
-		DDD372922833D5240055EFE5 /* football.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDD372842833D5230055EFE5 /* football.jpg */; };
-		DDD372932833D5240055EFE5 /* dance.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDD372852833D5230055EFE5 /* dance.jpg */; };
-		DDD372942833D5240055EFE5 /* tennis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDD372862833D5230055EFE5 /* tennis.jpg */; };
-		DDD372952833D5240055EFE5 /* golf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDD372872833D5230055EFE5 /* golf.jpg */; };
-		DDD372962833D5240055EFE5 /* skiing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDD372882833D5230055EFE5 /* skiing.jpg */; };
-		DDD372972833D5240055EFE5 /* boxing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDD372892833D5230055EFE5 /* boxing.jpg */; };
-		DDD372982833D5240055EFE5 /* walk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDD3728A2833D5230055EFE5 /* walk.jpg */; };
-		DDD372992833D5240055EFE5 /* snooker.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDD3728B2833D5230055EFE5 /* snooker.jpg */; };
-		DDD3729A2833D5240055EFE5 /* sit-up.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDD3728C2833D5230055EFE5 /* sit-up.jpg */; };
-		DDD3729B2833D5240055EFE5 /* swimming.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDD3728D2833D5230055EFE5 /* swimming.jpg */; };
-		DDD3729C2833D5240055EFE5 /* run.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDD3728E2833D5230055EFE5 /* run.jpg */; };
-		DDD3729D2833D5240055EFE5 /* jump.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDD3728F2833D5230055EFE5 /* jump.jpg */; };
-		DDD3729E2833D5240055EFE5 /* bicycle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDD372902833D5240055EFE5 /* bicycle.jpg */; };
-		DDD3729F2833D5240055EFE5 /* basketball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDD372912833D5240055EFE5 /* basketball.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C3509542834F59D0015ACC2 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		2C3509562834F9380015ACC2 /* run.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = run.jpg; sourceTree = "<group>"; };
+		2C3509572834F9380015ACC2 /* dance.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dance.jpg; sourceTree = "<group>"; };
+		2C3509582834F9380015ACC2 /* basketball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = basketball.jpg; sourceTree = "<group>"; };
+		2C3509592834F9380015ACC2 /* tennis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tennis.jpg; sourceTree = "<group>"; };
+		2C35095A2834F9390015ACC2 /* jump.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jump.jpg; sourceTree = "<group>"; };
+		2C35095B2834F9390015ACC2 /* snooker.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = snooker.jpg; sourceTree = "<group>"; };
+		2C35095C2834F9390015ACC2 /* bicycle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bicycle.jpg; sourceTree = "<group>"; };
+		2C35095D2834F9390015ACC2 /* swimming.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = swimming.jpg; sourceTree = "<group>"; };
+		2C35095E2834F9390015ACC2 /* boxing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boxing.jpg; sourceTree = "<group>"; };
+		2C35095F2834F9390015ACC2 /* walk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = walk.jpg; sourceTree = "<group>"; };
+		2C3509602834F9390015ACC2 /* sit-up.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sit-up.jpg"; sourceTree = "<group>"; };
+		2C3509612834F9390015ACC2 /* football.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = football.jpg; sourceTree = "<group>"; };
+		2C3509622834F9390015ACC2 /* skiing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skiing.jpg; sourceTree = "<group>"; };
+		2C3509632834F9390015ACC2 /* golf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = golf.jpg; sourceTree = "<group>"; };
+		2C3509722834FC440015ACC2 /* UserDataEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataEditVC.swift; sourceTree = "<group>"; };
+		2C3509742835444E0015ACC2 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
+		2C35097628361D580015ACC2 /* CalorieCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieCalculator.swift; sourceTree = "<group>"; };
 		2C57674E2833C5BA006608A5 /* Pasta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pasta.jpg; sourceTree = "<group>"; };
 		2C57674F2833C5BA006608A5 /* Pumpkin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pumpkin.jpg; sourceTree = "<group>"; };
 		2C5767502833C5BA006608A5 /* Chicken breast.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Chicken breast.jpg"; sourceTree = "<group>"; };
@@ -86,20 +108,6 @@
 		2C6837B0282B9A4300251070 /* FoodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodVC.swift; sourceTree = "<group>"; };
 		2C6837B2282BA47400251070 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		2C6837B4282BA55500251070 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
-		DDD372842833D5230055EFE5 /* football.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = football.jpg; path = ../../../../../Desktop/Exercisessss/football.jpg; sourceTree = "<group>"; };
-		DDD372852833D5230055EFE5 /* dance.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dance.jpg; path = ../../../../../Desktop/Exercisessss/dance.jpg; sourceTree = "<group>"; };
-		DDD372862833D5230055EFE5 /* tennis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tennis.jpg; path = ../../../../../Desktop/Exercisessss/tennis.jpg; sourceTree = "<group>"; };
-		DDD372872833D5230055EFE5 /* golf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = golf.jpg; path = ../../../../../Desktop/Exercisessss/golf.jpg; sourceTree = "<group>"; };
-		DDD372882833D5230055EFE5 /* skiing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = skiing.jpg; path = ../../../../../Desktop/Exercisessss/skiing.jpg; sourceTree = "<group>"; };
-		DDD372892833D5230055EFE5 /* boxing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = boxing.jpg; path = ../../../../../Desktop/Exercisessss/boxing.jpg; sourceTree = "<group>"; };
-		DDD3728A2833D5230055EFE5 /* walk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = walk.jpg; path = ../../../../../Desktop/Exercisessss/walk.jpg; sourceTree = "<group>"; };
-		DDD3728B2833D5230055EFE5 /* snooker.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = snooker.jpg; path = ../../../../../Desktop/Exercisessss/snooker.jpg; sourceTree = "<group>"; };
-		DDD3728C2833D5230055EFE5 /* sit-up.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "sit-up.jpg"; path = "../../../../../Desktop/Exercisessss/sit-up.jpg"; sourceTree = "<group>"; };
-		DDD3728D2833D5230055EFE5 /* swimming.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = swimming.jpg; path = ../../../../../Desktop/Exercisessss/swimming.jpg; sourceTree = "<group>"; };
-		DDD3728E2833D5230055EFE5 /* run.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = run.jpg; path = ../../../../../Desktop/Exercisessss/run.jpg; sourceTree = "<group>"; };
-		DDD3728F2833D5230055EFE5 /* jump.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jump.jpg; path = ../../../../../Desktop/Exercisessss/jump.jpg; sourceTree = "<group>"; };
-		DDD372902833D5240055EFE5 /* bicycle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bicycle.jpg; path = ../../../../../Desktop/Exercisessss/bicycle.jpg; sourceTree = "<group>"; };
-		DDD372912833D5240055EFE5 /* basketball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = basketball.jpg; path = ../../../../../Desktop/Exercisessss/basketball.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +121,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C3509532834F5840015ACC2 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				2C3509542834F59D0015ACC2 /* UserData.swift */,
+				2C35097628361D580015ACC2 /* CalorieCalculator.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
 		2C68376628237A0800251070 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +149,7 @@
 		2C68377128237A0800251070 /* iosAssessment3 */ = {
 			isa = PBXGroup;
 			children = (
+				2C3509532834F5840015ACC2 /* data */,
 				2C6837BA282BB0E900251070 /* photo */,
 				2C68378928237B6800251070 /* model */,
 				2C68378728237B5900251070 /* contoller */,
@@ -158,6 +176,8 @@
 			children = (
 				2C68377628237A0800251070 /* HomeVC.swift */,
 				2C6837B0282B9A4300251070 /* FoodVC.swift */,
+				2C3509722834FC440015ACC2 /* UserDataEditVC.swift */,
+				2C3509742835444E0015ACC2 /* UserProfileVC.swift */,
 			);
 			path = contoller;
 			sourceTree = "<group>";
@@ -174,6 +194,20 @@
 		2C6837BA282BB0E900251070 /* photo */ = {
 			isa = PBXGroup;
 			children = (
+				2C3509582834F9380015ACC2 /* basketball.jpg */,
+				2C35095C2834F9390015ACC2 /* bicycle.jpg */,
+				2C35095E2834F9390015ACC2 /* boxing.jpg */,
+				2C3509572834F9380015ACC2 /* dance.jpg */,
+				2C3509612834F9390015ACC2 /* football.jpg */,
+				2C3509632834F9390015ACC2 /* golf.jpg */,
+				2C35095A2834F9390015ACC2 /* jump.jpg */,
+				2C3509562834F9380015ACC2 /* run.jpg */,
+				2C3509602834F9390015ACC2 /* sit-up.jpg */,
+				2C3509622834F9390015ACC2 /* skiing.jpg */,
+				2C35095B2834F9390015ACC2 /* snooker.jpg */,
+				2C35095D2834F9390015ACC2 /* swimming.jpg */,
+				2C3509592834F9380015ACC2 /* tennis.jpg */,
+				2C35095F2834F9390015ACC2 /* walk.jpg */,
 				2C5767532833C5BA006608A5 /* Apple */,
 				2C5767562833C5BB006608A5 /* Beef.jpg */,
 				2C5767552833C5BB006608A5 /* Bread.jpg */,
@@ -195,20 +229,6 @@
 				2C5767622833C5BB006608A5 /* Seaweed.jpg */,
 				2C5767572833C5BB006608A5 /* Shrimp.jpg */,
 				2C5767592833C5BB006608A5 /* Watermelon.jpg */,
-				DDD372912833D5240055EFE5 /* basketball.jpg */,
-				DDD372902833D5240055EFE5 /* bicycle.jpg */,
-				DDD372892833D5230055EFE5 /* boxing.jpg */,
-				DDD372852833D5230055EFE5 /* dance.jpg */,
-				DDD372842833D5230055EFE5 /* football.jpg */,
-				DDD372872833D5230055EFE5 /* golf.jpg */,
-				DDD3728F2833D5230055EFE5 /* jump.jpg */,
-				DDD3728E2833D5230055EFE5 /* run.jpg */,
-				DDD3728C2833D5230055EFE5 /* sit-up.jpg */,
-				DDD372882833D5230055EFE5 /* skiing.jpg */,
-				DDD3728B2833D5230055EFE5 /* snooker.jpg */,
-				DDD3728D2833D5230055EFE5 /* swimming.jpg */,
-				DDD372862833D5230055EFE5 /* tennis.jpg */,
-				DDD3728A2833D5230055EFE5 /* walk.jpg */,
 			);
 			path = photo;
 			sourceTree = "<group>";
@@ -271,40 +291,40 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C35096D2834F9390015ACC2 /* walk.jpg in Resources */,
+				2C3509702834F9390015ACC2 /* skiing.jpg in Resources */,
 				2C5767682833C5BB006608A5 /* Apple in Resources */,
-				DDD372982833D5240055EFE5 /* walk.jpg in Resources */,
+				2C35096F2834F9390015ACC2 /* football.jpg in Resources */,
 				2C57676E2833C5BB006608A5 /* Watermelon.jpg in Resources */,
-				DDD3729A2833D5240055EFE5 /* sit-up.jpg in Resources */,
-				DDD3729B2833D5240055EFE5 /* swimming.jpg in Resources */,
 				2C5767722833C5BB006608A5 /* Peach.jpg in Resources */,
-				DDD372932833D5240055EFE5 /* dance.jpg in Resources */,
+				2C3509692834F9390015ACC2 /* snooker.jpg in Resources */,
+				2C3509712834F9390015ACC2 /* golf.jpg in Resources */,
+				2C3509682834F9390015ACC2 /* jump.jpg in Resources */,
+				2C3509652834F9390015ACC2 /* dance.jpg in Resources */,
+				2C35096B2834F9390015ACC2 /* swimming.jpg in Resources */,
 				2C57676D2833C5BB006608A5 /* Corn.jpg in Resources */,
 				2C5767692833C5BB006608A5 /* Egg.jpg in Resources */,
+				2C3509672834F9390015ACC2 /* tennis.jpg in Resources */,
 				2C68377F28237A0A00251070 /* LaunchScreen.storyboard in Resources */,
 				2C5767632833C5BB006608A5 /* Pasta.jpg in Resources */,
 				2C5767732833C5BB006608A5 /* Pork.jpg in Resources */,
 				2C5767772833C5BB006608A5 /* Seaweed.jpg in Resources */,
+				2C35096C2834F9390015ACC2 /* boxing.jpg in Resources */,
 				2C5767742833C5BB006608A5 /* Mushroom.jpg in Resources */,
-				DDD372952833D5240055EFE5 /* golf.jpg in Resources */,
+				2C35096A2834F9390015ACC2 /* bicycle.jpg in Resources */,
 				2C57676C2833C5BB006608A5 /* Shrimp.jpg in Resources */,
-				DDD3729F2833D5240055EFE5 /* basketball.jpg in Resources */,
+				2C3509662834F9390015ACC2 /* basketball.jpg in Resources */,
 				2C5767712833C5BB006608A5 /* Chips.jpg in Resources */,
-				DDD372972833D5240055EFE5 /* boxing.jpg in Resources */,
-				DDD3729E2833D5240055EFE5 /* bicycle.jpg in Resources */,
-				DDD372962833D5240055EFE5 /* skiing.jpg in Resources */,
 				2C5767752833C5BB006608A5 /* Fish.jpg in Resources */,
 				2C68377C28237A0A00251070 /* Assets.xcassets in Resources */,
+				2C35096E2834F9390015ACC2 /* sit-up.jpg in Resources */,
 				2C57676B2833C5BB006608A5 /* Beef.jpg in Resources */,
 				2C5767642833C5BB006608A5 /* Pumpkin.jpg in Resources */,
+				2C3509642834F9390015ACC2 /* run.jpg in Resources */,
 				2C57676F2833C5BB006608A5 /* Mango.jpg in Resources */,
 				2C57676A2833C5BB006608A5 /* Bread.jpg in Resources */,
 				2C68377A28237A0800251070 /* Main.storyboard in Resources */,
-				DDD3729C2833D5240055EFE5 /* run.jpg in Resources */,
 				2C5767672833C5BB006608A5 /* Orange.jpg in Resources */,
-				DDD372942833D5240055EFE5 /* tennis.jpg in Resources */,
-				DDD372922833D5240055EFE5 /* football.jpg in Resources */,
-				DDD372992833D5240055EFE5 /* snooker.jpg in Resources */,
-				DDD3729D2833D5240055EFE5 /* jump.jpg in Resources */,
 				2C5767662833C5BB006608A5 /* Cheese.jpg in Resources */,
 				2C5767702833C5BB006608A5 /* Grape.jpg in Resources */,
 				2C5767652833C5BB006608A5 /* Chicken breast.jpg in Resources */,
@@ -321,8 +341,12 @@
 			files = (
 				2C6837B1282B9A4300251070 /* FoodVC.swift in Sources */,
 				2C68377728237A0800251070 /* HomeVC.swift in Sources */,
+				2C3509552834F59D0015ACC2 /* UserData.swift in Sources */,
 				2C6837B3282BA47400251070 /* Food.swift in Sources */,
 				2C68377328237A0800251070 /* AppDelegate.swift in Sources */,
+				2C3509752835444E0015ACC2 /* UserProfileVC.swift in Sources */,
+				2C3509732834FC440015ACC2 /* UserDataEditVC.swift in Sources */,
+				2C35097728361D580015ACC2 /* CalorieCalculator.swift in Sources */,
 				2C68377528237A0800251070 /* SceneDelegate.swift in Sources */,
 				2C6837B5282BA55500251070 /* Exercise.swift in Sources */,
 			);
