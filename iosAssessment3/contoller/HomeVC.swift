@@ -67,6 +67,7 @@ class HomeVC: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         if(segue.identifier=="breackfastCalories"){
             let foodVC=segue.destination as! FoodVC
             foodVC.diningType="breakfast"

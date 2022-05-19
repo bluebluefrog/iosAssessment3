@@ -14,24 +14,24 @@ class UserProfileVC:  UIViewController {
     @IBOutlet weak var genderLabel: UILabel!
     
     override func viewDidLoad() {
-        let weight=UserDefaults.standard.value(forKey: "weight") as! Int
-        let height=UserDefaults.standard.value(forKey: "height") as! Int
-        let age=UserDefaults.standard.value(forKey: "age") as! Int
-        let target=UserDefaults.standard.value(forKey: "target") as! Int
-        let gender=UserDefaults.standard.value(forKey: "gender") as! String
+        
+        let weight=UserDefaults.standard.value(forKey: "weight")
+        let height=UserDefaults.standard.value(forKey: "height")
+        let age=UserDefaults.standard.value(forKey: "age")
+        let target=UserDefaults.standard.value(forKey: "target")
+        let gender=UserDefaults.standard.value(forKey: "gender")
         
         if(weight==nil||height==nil||age==nil||target==nil||gender==nil){
             let vc = storyboard?.instantiateViewController(identifier: "UserDataEditVC") as! UserDataEditVC
             self.navigationController?.pushViewController(vc, animated: true)
             vc.navigationItem.setHidesBackButton(true, animated: true)
         }
-        
         else{
-          weightLabel.text = String(weight)
-          hightLabel.text = String(height)
-          ageLabel.text = String(age)
-          targetLabel.text = String(target)
-          genderLabel.text = gender
+          weightLabel.text = String(weight as! Int)
+          hightLabel.text = String(height as! Int)
+          ageLabel.text = String(age as! Int)
+          targetLabel.text = String(target as! Int)
+          genderLabel.text = gender as! String
         }
     }
     
