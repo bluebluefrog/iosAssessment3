@@ -24,6 +24,7 @@
 		2C3509712834F9390015ACC2 /* golf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C3509632834F9390015ACC2 /* golf.jpg */; };
 		2C3509732834FC440015ACC2 /* UserDataEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3509722834FC440015ACC2 /* UserDataEditVC.swift */; };
 		2C3509752835444E0015ACC2 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3509742835444E0015ACC2 /* UserProfileVC.swift */; };
+		2C35097728361D580015ACC2 /* CalorieCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C35097628361D580015ACC2 /* CalorieCalculator.swift */; };
 		2C5767632833C5BB006608A5 /* Pasta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C57674E2833C5BA006608A5 /* Pasta.jpg */; };
 		2C5767642833C5BB006608A5 /* Pumpkin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C57674F2833C5BA006608A5 /* Pumpkin.jpg */; };
 		2C5767652833C5BB006608A5 /* Chicken breast.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C5767502833C5BA006608A5 /* Chicken breast.jpg */; };
@@ -74,6 +75,7 @@
 		2C3509632834F9390015ACC2 /* golf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = golf.jpg; sourceTree = "<group>"; };
 		2C3509722834FC440015ACC2 /* UserDataEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataEditVC.swift; sourceTree = "<group>"; };
 		2C3509742835444E0015ACC2 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
+		2C35097628361D580015ACC2 /* CalorieCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieCalculator.swift; sourceTree = "<group>"; };
 		2C57674E2833C5BA006608A5 /* Pasta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pasta.jpg; sourceTree = "<group>"; };
 		2C57674F2833C5BA006608A5 /* Pumpkin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pumpkin.jpg; sourceTree = "<group>"; };
 		2C5767502833C5BA006608A5 /* Chicken breast.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Chicken breast.jpg"; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				2C3509542834F59D0015ACC2 /* UserData.swift */,
+				2C35097628361D580015ACC2 /* CalorieCalculator.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				2C68377328237A0800251070 /* AppDelegate.swift in Sources */,
 				2C3509752835444E0015ACC2 /* UserProfileVC.swift in Sources */,
 				2C3509732834FC440015ACC2 /* UserDataEditVC.swift in Sources */,
+				2C35097728361D580015ACC2 /* CalorieCalculator.swift in Sources */,
 				2C68377528237A0800251070 /* SceneDelegate.swift in Sources */,
 				2C6837B5282BA55500251070 /* Exercise.swift in Sources */,
 			);
