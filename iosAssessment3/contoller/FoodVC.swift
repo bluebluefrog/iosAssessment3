@@ -50,6 +50,19 @@ class FoodVC: UIViewController {
         exerciseList.append(Exercise(exerciseName: "Tennis", calories: 352, img: UIImage(named:"tennis.jpg")!))
         exerciseList.append(Exercise(exerciseName: "Walk", calories: 255, img: UIImage(named:"walk.jpg")!))
     }
+    @IBAction func OnAddClick(_ sender: Any) {
+        
+        let vc = storyboard?.instantiateViewController(identifier: "AddItemVC") as! AddItemVC
+        if(isFood){
+            vc.name="food name"
+            vc.calories="calories"
+        }else{
+            vc.name="sport name"
+            vc.calories="calories"
+            vc.isFood=false
+        }
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension FoodVC:UITableViewDataSource {
@@ -64,7 +77,6 @@ extension FoodVC:UITableViewDataSource {
         }else{
             return exerciseList.count
         }
-    
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
