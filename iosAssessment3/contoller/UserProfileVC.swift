@@ -1,9 +1,3 @@
-//
-//  UserProfileVC.swift
-//  iosAssessment3
-//
-//  Created by 王景彬 on 19/5/2022.
-//
 
 import UIKit
 
@@ -20,11 +14,11 @@ class UserProfileVC:  UIViewController {
     @IBOutlet weak var genderLabel: UILabel!
     
     override func viewDidLoad() {
-        var weight=UserDefaults.standard.value(forKey: "weight")
-        let height=UserDefaults.standard.value(forKey: "height")
-        let age=UserDefaults.standard.value(forKey: "age")
-        let target=UserDefaults.standard.value(forKey: "target")
-        let gender=UserDefaults.standard.value(forKey: "gender")
+        let weight=UserDefaults.standard.value(forKey: "weight") as! Int
+        let height=UserDefaults.standard.value(forKey: "height") as! Int
+        let age=UserDefaults.standard.value(forKey: "age") as! Int
+        let target=UserDefaults.standard.value(forKey: "target") as! Int
+        let gender=UserDefaults.standard.value(forKey: "gender") as! String
         
         if(weight==nil||height==nil||age==nil||target==nil||gender==nil){
             let vc = storyboard?.instantiateViewController(identifier: "UserDataEditVC") as! UserDataEditVC
@@ -33,13 +27,14 @@ class UserProfileVC:  UIViewController {
         }
         
         else{
-          weightLabel.text = weight as! String
-          hightLabel.text=height as!String
-          ageLabel.text=age as!String
-          targetLabel.text=target as!String
-          genderLabel.text=gender as!String
+          weightLabel.text = String(weight)
+          hightLabel.text = String(height)
+          ageLabel.text = String(age)
+          targetLabel.text = String(target)
+          genderLabel.text = gender
         }
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier=="goUserDataEdit"){
             let userEditVC=segue.destination as! UserDataEditVC

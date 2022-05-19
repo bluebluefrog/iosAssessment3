@@ -27,28 +27,43 @@ class HomeVC: UIViewController {
     
     var currentTotalConsumeCalories:Int=0
     
+    var isFood=true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         if(checkUserInfo()){
-//        UserDefaults.standard.set(availableCalories, forKey: "availableCalories")
-//        UserDefaults.standard.set(currentTotalCalories, forKey: "currentTotalCalories")
-//        UserDefaults.standard.set(currentTotalConsumeCalories, forKey: "currentTotalConsumeCalories")
-        
-        var availableCaloriesData = UserDefaults.standard.value(forKey: "availableCalories") as! Int
-        var currentTotalCaloriesData = UserDefaults.standard.value(forKey: "currentTotalCalories") as! Int
-        var currentTotalConsumeCaloriesData = UserDefaults.standard.value(forKey: "currentTotalConsumeCalories") as! Int
-    
-        
-        availableCalories=availableCaloriesData-currentTotalCaloriesData
-        availableCaloriesLabel.text=String(availableCalories)
-        
-        UserDefaults.standard.set(availableCalories, forKey: "availableCalories")
-
+            
+            var availableCaloriesData = UserDefaults.standard.value(forKey: "availableCalories") as! Int
+            var currentTotalCaloriesData = UserDefaults.standard.value(forKey: "currentTotalCalories") as! Int
+            var currentTotalConsumeCaloriesData = UserDefaults.standard.value(forKey: "currentTotalConsumeCalories") as! Int
+            
+            var breakfastTotalCaloriesData=UserDefaults.standard.value(forKey: "breakfastTotalCalories") as! Int
+            var lunchTotalCaloriesData=UserDefaults.standard.value(forKey: "lunchTotalCalories") as! Int
+            var dinnerTotalCaloriesData=UserDefaults.standard.value(forKey: "dinnerTotalCalories") as! Int
+            var snackTotalCaloriesData=UserDefaults.standard.value(forKey: "snackTotalCalories") as! Int
+            
+            if(isFood){
+                availableCalories=availableCaloriesData-currentTotalCalories
+                UserDefaults.standard.set(availableCalories, forKey: "availableCalories")
+            }
+            else{
+                availableCalories=availableCaloriesData+currentTotalConsumeCalories
+                UserDefaults.standard.set(availableCalories, forKey: "availableCalories")
+            }
+            availableCaloriesLabel.text=String(availableCalories)
+            eatCaloriesLabel.text=String(currentTotalCaloriesData)
+            breakfastCaloriesLabel.text=String(breakfastTotalCaloriesData)
+            lunchCaloriesLabel.text=String(lunchTotalCaloriesData)
+            dinnerCaloriesLabel.text=String(dinnerTotalCaloriesData)
+            snackCaloriesLabel.text=String(snackTotalCaloriesData)
+            exerciseCaloriesLabel.text=String(currentTotalConsumeCaloriesData)
+            excriciseCosumeCaloriesLabel.text=String(currentTotalConsumeCaloriesData)
+            
         }else{
             //tell user to set their data
             ErrorLabel.text="Pleace Setup UserData!"
         }
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -79,10 +94,12 @@ class HomeVC: UIViewController {
     }
     
     func checkUserInfo()->Bool{
-        let height=UserDefaults.standard.value(forKey: "height")
         let weight=UserDefaults.standard.value(forKey: "weight")
+        let height=UserDefaults.standard.value(forKey: "height")
         let age=UserDefaults.standard.value(forKey: "age")
-        if (height==nil||weight==nil||age==nil)
+        let target=UserDefaults.standard.value(forKey: "target")
+        let gender=UserDefaults.standard.value(forKey: "gender")
+        if (height==nil||weight==nil||age==nil||target==nil||gender==nil)
         {
            return false
         }

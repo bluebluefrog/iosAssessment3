@@ -71,9 +71,9 @@ extension FoodVC:UITableViewDataSource {
         let cell:UITableViewCell = UITableViewCell(style:UITableViewCell.CellStyle.subtitle, reuseIdentifier: nil)
         
         if(isFood){
-        cell.imageView!.image = foodList[indexPath.row].img
-        cell.textLabel?.text=foodList[indexPath.row].foodname
-        cell.detailTextLabel?.text=String(foodList[indexPath.row].calories)+" calories"+"/100g"
+            cell.imageView!.image = foodList[indexPath.row].img
+            cell.textLabel?.text=foodList[indexPath.row].foodname
+            cell.detailTextLabel?.text=String(foodList[indexPath.row].calories)+" calories"+"/100g"
         }else{
             cell.imageView!.image = exerciseList[indexPath.row].img
             cell.textLabel?.text=exerciseList[indexPath.row].exerciseName
@@ -88,13 +88,50 @@ extension FoodVC:UITableViewDelegate{
     
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             tableView.deselectRow(at: indexPath, animated: true);
-            if(isFood){
             let vc = storyboard?.instantiateViewController(identifier: "HomeVC") as! HomeVC
-            vc.currentTotalCalories+=foodList[indexPath.row].calories
-            self.navigationController?.pushViewController(vc, animated: true)
-            vc.navigationItem.setHidesBackButton(true, animated: true)
+            
+            if(isFood){
+                vc.currentTotalCalories+=foodList[indexPath.row].calories
+                
+                var curCal=UserDefaults.standard.value(forKey: "currentTotalCalories") as! Int
+                curCal+=foodList[indexPath.row].calories
+                UserDefaults.standard.set(curCal,forKey: "currentTotalCalories")
+                
+                if(diningType=="breakfast"){
+                    var curCal=UserDefaults.standard.value(forKey: "breakfastTotalCalories") as! Int
+                    curCal+=foodList[indexPath.row].calories
+                    UserDefaults.standard.set(curCal,forKey: "breakfastTotalCalories")
+                }
+                else if(diningType=="lunch"){
+                    var curCal=UserDefaults.standard.value(forKey: "lunchTotalCalories") as! Int
+                    curCal+=foodList[indexPath.row].calories
+                    UserDefaults.standard.set(curCal,forKey: "lunchTotalCalories")
+                }
+                else if(diningType=="dinner"){
+                    var curCal=UserDefaults.standard.value(forKey: "dinnerTotalCalories") as! Int
+                    curCal+=foodList[indexPath.row].calories
+                    UserDefaults.standard.set(curCal,forKey: "dinnerTotalCalories")
+                }
+                else if(diningType=="snack"){
+                    var curCal=UserDefaults.standard.value(forKey: "snackTotalCalories") as! Int
+                    curCal+=foodList[indexPath.row].calories
+                    UserDefaults.standard.set(curCal,forKey: "snackTotalCalories")
+                }
+                
+                self.navigationController?.pushViewController(vc, animated: true)
+                vc.navigationItem.setHidesBackButton(true, animated: true)
+            
             }else{
                 //when is not food
+                vc.isFood=false
+                vc.currentTotalConsumeCalories+=exerciseList[indexPath.row].calories
+                
+                var curCal=UserDefaults.standard.value(forKey: "currentTotalConsumeCalories") as! Int
+                curCal+=exerciseList[indexPath.row].calories
+                UserDefaults.standard.set(curCal,forKey: "currentTotalConsumeCalories")
+                
+                self.navigationController?.pushViewController(vc, animated: true)
+                vc.navigationItem.setHidesBackButton(true, animated: true)
             }
         }
     }
