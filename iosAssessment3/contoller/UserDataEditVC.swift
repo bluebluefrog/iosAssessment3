@@ -61,6 +61,7 @@ class UserDataEditVC:  UIViewController {
             UserDefaults.standard.set(0,forKey: "snackTotalCalories")
             UserDefaults.standard.set(0,forKey: "currentTotalConsumeCalories")
             UserDefaults.standard.set(0,forKey: "currentTotalCalories")
+            UserDefaults.standard.set(1,forKey: "completeProfile")
             
             let vc = storyboard?.instantiateViewController(identifier: "UserProfileVC") as! UserProfileVC
             self.navigationController?.pushViewController(vc, animated: true)

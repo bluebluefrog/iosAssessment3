@@ -6,6 +6,7 @@ class FoodVC: UIViewController {
     
     var diningType:String = ""
     var isFood:Bool=true
+    var complete:Int=0
     var foodList:[Food]=[]
     var exerciseList:[Exercise]=[]
     
@@ -90,7 +91,15 @@ extension FoodVC:UITableViewDelegate{
             tableView.deselectRow(at: indexPath, animated: true);
             let vc = storyboard?.instantiateViewController(identifier: "HomeVC") as! HomeVC
             
-            if(isFood){
+            let completeData=UserDefaults.standard.value(forKey:"completeProfile")
+            
+            if(completeData==nil){
+                complete=0
+            }else if(completeData as! Int==1){
+                complete=completeData as! Int
+            }
+            
+            if(isFood&&complete==1){
                 vc.currentTotalCalories+=foodList[indexPath.row].calories
                 
                 var curCal=UserDefaults.standard.value(forKey: "currentTotalCalories") as! Int
@@ -121,7 +130,7 @@ extension FoodVC:UITableViewDelegate{
                 self.navigationController?.pushViewController(vc, animated: true)
                 vc.navigationItem.setHidesBackButton(true, animated: true)
             
-            }else{
+            }else if(!isFood&&complete==1){
                 //when is not food
                 vc.isFood=false
                 vc.currentTotalConsumeCalories+=exerciseList[indexPath.row].calories
