@@ -21,6 +21,8 @@ class AddItemVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.hideKeyboardWhenTappedAround()
+        
         nameLabel.text=name
         caloriesLabel.text=calories
     }
@@ -43,6 +45,15 @@ class AddItemVC: UIViewController {
             self.navigationController?.pushViewController(vc, animated: true)
             vc.navigationItem.setHidesBackButton(true, animated: true)
         }
-        
     }
+    
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc private func dismissKeyboard() {
+        view.endEditing(true)
+     }
 }

@@ -14,7 +14,7 @@ class UserProfileVC:  UIViewController {
     @IBOutlet weak var genderLabel: UILabel!
     
     override func viewDidLoad() {
-        
+        super.viewDidLoad()
         let weight=UserDefaults.standard.value(forKey: "weight")
         let height=UserDefaults.standard.value(forKey: "height")
         let age=UserDefaults.standard.value(forKey: "age")
