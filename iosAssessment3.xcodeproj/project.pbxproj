@@ -58,6 +58,14 @@
 		2C6837B1282B9A4300251070 /* FoodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6837B0282B9A4300251070 /* FoodVC.swift */; };
 		2C6837B3282BA47400251070 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6837B2282BA47400251070 /* Food.swift */; };
 		2C6837B5282BA55500251070 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6837B4282BA55500251070 /* Exercise.swift */; };
+		DD35A75E28373EAD001A27C3 /* 66.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD35A75628373EAD001A27C3 /* 66.jpg */; };
+		DD35A75F28373EAD001A27C3 /* 44.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD35A75728373EAD001A27C3 /* 44.jpg */; };
+		DD35A76028373EAD001A27C3 /* 55.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD35A75828373EAD001A27C3 /* 55.jpg */; };
+		DD35A76128373EAD001A27C3 /* 88.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD35A75928373EAD001A27C3 /* 88.jpg */; };
+		DD35A76228373EAD001A27C3 /* 77.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD35A75A28373EAD001A27C3 /* 77.jpg */; };
+		DD35A76328373EAD001A27C3 /* 33.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD35A75B28373EAD001A27C3 /* 33.jpg */; };
+		DD35A76428373EAD001A27C3 /* 22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD35A75C28373EAD001A27C3 /* 22.jpg */; };
+		DD35A76528373EAD001A27C3 /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD35A75D28373EAD001A27C3 /* 11.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +122,14 @@
 		2C6837B0282B9A4300251070 /* FoodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodVC.swift; sourceTree = "<group>"; };
 		2C6837B2282BA47400251070 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		2C6837B4282BA55500251070 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		DD35A75628373EAD001A27C3 /* 66.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 66.jpg; path = "../../../../../Desktop/新建文件夹 (3) 2/66.jpg"; sourceTree = "<group>"; };
+		DD35A75728373EAD001A27C3 /* 44.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 44.jpg; path = "../../../../../Desktop/新建文件夹 (3) 2/44.jpg"; sourceTree = "<group>"; };
+		DD35A75828373EAD001A27C3 /* 55.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 55.jpg; path = "../../../../../Desktop/新建文件夹 (3) 2/55.jpg"; sourceTree = "<group>"; };
+		DD35A75928373EAD001A27C3 /* 88.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 88.jpg; path = "../../../../../Desktop/新建文件夹 (3) 2/88.jpg"; sourceTree = "<group>"; };
+		DD35A75A28373EAD001A27C3 /* 77.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 77.jpg; path = "../../../../../Desktop/新建文件夹 (3) 2/77.jpg"; sourceTree = "<group>"; };
+		DD35A75B28373EAD001A27C3 /* 33.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 33.jpg; path = "../../../../../Desktop/新建文件夹 (3) 2/33.jpg"; sourceTree = "<group>"; };
+		DD35A75C28373EAD001A27C3 /* 22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 22.jpg; path = "../../../../../Desktop/新建文件夹 (3) 2/22.jpg"; sourceTree = "<group>"; };
+		DD35A75D28373EAD001A27C3 /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 11.jpg; path = "../../../../../Desktop/新建文件夹 (3) 2/11.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +254,14 @@
 				2C5767622833C5BB006608A5 /* Seaweed.jpg */,
 				2C5767572833C5BB006608A5 /* Shrimp.jpg */,
 				2C5767592833C5BB006608A5 /* Watermelon.jpg */,
+				DD35A75D28373EAD001A27C3 /* 11.jpg */,
+				DD35A75C28373EAD001A27C3 /* 22.jpg */,
+				DD35A75B28373EAD001A27C3 /* 33.jpg */,
+				DD35A75728373EAD001A27C3 /* 44.jpg */,
+				DD35A75828373EAD001A27C3 /* 55.jpg */,
+				DD35A75628373EAD001A27C3 /* 66.jpg */,
+				DD35A75A28373EAD001A27C3 /* 77.jpg */,
+				DD35A75928373EAD001A27C3 /* 88.jpg */,
 			);
 			path = photo;
 			sourceTree = "<group>";
@@ -302,7 +326,11 @@
 			files = (
 				2C35096D2834F9390015ACC2 /* walk.jpg in Resources */,
 				2C3509702834F9390015ACC2 /* skiing.jpg in Resources */,
+				DD35A76028373EAD001A27C3 /* 55.jpg in Resources */,
+				DD35A75E28373EAD001A27C3 /* 66.jpg in Resources */,
 				2C5767682833C5BB006608A5 /* Apple in Resources */,
+				DD35A76428373EAD001A27C3 /* 22.jpg in Resources */,
+				DD35A76128373EAD001A27C3 /* 88.jpg in Resources */,
 				2C3509A1283680D30015ACC2 /* unionSport.jpg in Resources */,
 				2C35096F2834F9390015ACC2 /* football.jpg in Resources */,
 				2C57676E2833C5BB006608A5 /* Watermelon.jpg in Resources */,
@@ -320,18 +348,22 @@
 				2C5767732833C5BB006608A5 /* Pork.jpg in Resources */,
 				2C5767772833C5BB006608A5 /* Seaweed.jpg in Resources */,
 				2C35096C2834F9390015ACC2 /* boxing.jpg in Resources */,
+				DD35A75F28373EAD001A27C3 /* 44.jpg in Resources */,
 				2C5767742833C5BB006608A5 /* Mushroom.jpg in Resources */,
 				2C35096A2834F9390015ACC2 /* bicycle.jpg in Resources */,
 				2C57676C2833C5BB006608A5 /* Shrimp.jpg in Resources */,
 				2C3509662834F9390015ACC2 /* basketball.jpg in Resources */,
 				2C5767712833C5BB006608A5 /* Chips.jpg in Resources */,
 				2C5767752833C5BB006608A5 /* Fish.jpg in Resources */,
+				DD35A76228373EAD001A27C3 /* 77.jpg in Resources */,
 				2C68377C28237A0A00251070 /* Assets.xcassets in Resources */,
 				2C35096E2834F9390015ACC2 /* sit-up.jpg in Resources */,
+				DD35A76328373EAD001A27C3 /* 33.jpg in Resources */,
 				2C57676B2833C5BB006608A5 /* Beef.jpg in Resources */,
 				2C5767642833C5BB006608A5 /* Pumpkin.jpg in Resources */,
 				2C3509642834F9390015ACC2 /* run.jpg in Resources */,
 				2C57676F2833C5BB006608A5 /* Mango.jpg in Resources */,
+				DD35A76528373EAD001A27C3 /* 11.jpg in Resources */,
 				2C57676A2833C5BB006608A5 /* Bread.jpg in Resources */,
 				2C68377A28237A0800251070 /* Main.storyboard in Resources */,
 				2C5767672833C5BB006608A5 /* Orange.jpg in Resources */,

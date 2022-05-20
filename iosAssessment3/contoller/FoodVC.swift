@@ -34,6 +34,19 @@ class FoodVC: UIViewController {
         foodList.append(Food(foodname:"Cheese",calories: 349,img: UIImage(named:"Cheese.jpg")!))
         foodList.append(Food(foodname:"Bread",calories: 265,img: UIImage(named:"Bread.jpg")!))
         foodList.append(Food(foodname:"Pasta",calories: 131,img: UIImage(named:"Pasta.jpg")!))
+        foodList.append(Food(foodname:"Carrot",calories: 41,img:
+            UIImage(named:"11.jpg")!))
+        foodList.append(Food(foodname:"Tomato",calories: 16,img:
+            UIImage(named:"22.jpg")!))
+        foodList.append(Food(foodname:"Potato",calories: 77,img:
+            UIImage(named:"33.jpg")!))
+        foodList.append(Food(foodname:"Sausage",calories: 346,img: UIImage(named:"44.jpg")!))
+        foodList.append(Food(foodname:"Oyster",calories: 199,img:
+            UIImage(named:"55.jpg")!))
+        foodList.append(Food(foodname:"Bananas",calories: 89,img:
+            UIImage(named:"66.jpg")!))
+        foodList.append(Food(foodname:"Butter",calories: 717,img:
+            UIImage(named:"77.jpg")!))
         
         //Exercise data
         exerciseList.append(Exercise(exerciseName: "Bicycle", calories: 276, img: UIImage(named:"bicycle.jpg")!))
@@ -49,6 +62,8 @@ class FoodVC: UIViewController {
         exerciseList.append(Exercise(exerciseName: "Swimming", calories: 1036, img: UIImage(named:"swimming.jpg")!))
         exerciseList.append(Exercise(exerciseName: "Tennis", calories: 352, img: UIImage(named:"tennis.jpg")!))
         exerciseList.append(Exercise(exerciseName: "Walk", calories: 255, img: UIImage(named:"walk.jpg")!))
+        exerciseList.append(Exercise(exerciseName: "Yoga", calories: 594, img: UIImage(named:"88.jpg")!))
+        
     }
     @IBAction func OnAddClick(_ sender: Any) {
         
