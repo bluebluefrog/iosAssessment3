@@ -12,7 +12,7 @@ Due to a lack of familiarity with the IOS development environment, members have 
 
 In a later stage of development, we intend to add a function to automatically read food information from QR codes. The database will automatically transmit the calorie value of the food item based on the QR code reader, and the user page will automatically display the value. On the other hand, we will also create a function that will allow the app to be connected to the mobile app. Calories burned from the user's daily walk will be automatically added to the exercise calories.
 
-Note: Please enter the user information before using the other functions of the program！
+*Note: Please enter the user information before using the other functions of the program！
 
 Thanks for your using!
 
