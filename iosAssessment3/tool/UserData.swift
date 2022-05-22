@@ -7,16 +7,16 @@ class UserData{
         
         var value:Any
         if(type=="Int"){
-        value=UserDefaults.standard.value(forKey: key) as! Int
-        return value
+            value=UserDefaults.standard.value(forKey: key) as! Int
+            return value
         }
         else if(type=="String"){
-        value=UserDefaults.standard.value(forKey: key) as! String
-        return value
+            value=UserDefaults.standard.value(forKey: key) as! String
+            return value
         }
         else{
-        value=UserDefaults.standard.value(forKey: key)
-        return value
+            value=UserDefaults.standard.value(forKey: key)
+            return value
         }
         
     }
