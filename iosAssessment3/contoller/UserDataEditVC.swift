@@ -26,7 +26,8 @@ class UserDataEditVC:  UIViewController {
     var gender:String="other"
     
     override func viewDidLoad() {
-        
+        super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -68,4 +69,14 @@ class UserDataEditVC:  UIViewController {
             vc.navigationItem.setHidesBackButton(true, animated: true)
         }
     }
+    
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc private func dismissKeyboard() {
+        view.endEditing(true)
+     }
 }

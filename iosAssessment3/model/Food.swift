@@ -1,9 +1,3 @@
-//
-//  Food.swift
-//  iosAssessment3
-//
-//  Created by 王景彬 on 11/5/2022.
-//
 
 import UIKit
 

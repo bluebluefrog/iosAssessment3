@@ -14,12 +14,15 @@ class AddItemVC: UIViewController {
     
     var calories:String=""
     
-    
     var isFood:Bool=true
+    
+    var dinningType:String=""
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.hideKeyboardWhenTappedAround()
         
         nameLabel.text=name
         caloriesLabel.text=calories
@@ -29,13 +32,15 @@ class AddItemVC: UIViewController {
         
         if(nameTextBox.text==""||caloriesTextBox.text==""){
             errorLabel.text="Filed cant be empty!"
-        }else{
+        }
+        else{
             let nameInput:String=nameTextBox.text!
             let caloriesInput:Int=Int(caloriesTextBox.text!)!
             
             let vc = storyboard?.instantiateViewController(identifier: "FoodVC") as! FoodVC
             if(isFood){
                 vc.foodList.append(Food(foodname: nameInput, calories: caloriesInput, img: UIImage(named:"unionFood.jpg")!))
+                vc.diningType=dinningType
             }else{
                 vc.isFood=false
                 vc.exerciseList.append(Exercise(exerciseName: nameInput, calories: caloriesInput, img: UIImage(named:"unionSport.jpg")!))
@@ -43,6 +48,15 @@ class AddItemVC: UIViewController {
             self.navigationController?.pushViewController(vc, animated: true)
             vc.navigationItem.setHidesBackButton(true, animated: true)
         }
-        
     }
+    
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc private func dismissKeyboard() {
+        view.endEditing(true)
+     }
 }

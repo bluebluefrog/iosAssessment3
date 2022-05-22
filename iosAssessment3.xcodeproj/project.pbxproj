@@ -542,6 +542,7 @@
 				DEVELOPMENT_TEAM = 6D9K9TX262;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iosAssessment3/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CaloriesExpert;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -571,6 +572,7 @@
 				DEVELOPMENT_TEAM = 6D9K9TX262;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iosAssessment3/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CaloriesExpert;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

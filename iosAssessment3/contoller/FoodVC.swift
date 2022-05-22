@@ -1,5 +1,4 @@
 
-
 import UIKit
 
 class FoodVC: UIViewController {
@@ -71,6 +70,7 @@ class FoodVC: UIViewController {
         if(isFood){
             vc.name="food name"
             vc.calories="calories"
+            vc.dinningType=diningType
         }else{
             vc.name="sport name"
             vc.calories="calories"
