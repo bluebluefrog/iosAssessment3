@@ -23,3 +23,5 @@ Team members: Jingbin Wang 14106153
               Jiajie Xian 13737503
               Zichong Zeng 14021392
               
+The link for github repository is https://github.com/bluebluefrog/iosAssessment3
+              
