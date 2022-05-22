@@ -14,23 +14,23 @@ class CalorieCalculator {
         var totalCalories:Int=0
         if(gender=="male"){
             if(weight>target){
-                totalCalories = (10 * weight + 6 * height - 5 * age - 105) * 1.1
+                totalCalories = 10 * weight + 6 * height - 5 * age - 105
             }
             else if(target>weight){
-                (totalCalories = 10 * weight + 6 * height - 5 * age + 5) * 1.7
+                totalCalories = 10 * weight + 6 * height - 5 * age + 105
             }
             else{
-                totalCalories = (10 * weight + 6 * height - 5 * age + 5) * 1.1
+                totalCalories = 10 * weight + 6 * height - 5 * age + 5
             }
         }else if(gender=="female"){
             if(weight>target){
-                (totalCalories = 10 * weight + 6 * height - 5 * age - 261) * 1.1
+                totalCalories = 10 * weight + 6 * height - 5 * age - 261
             }
             else if(target>weight){
-                (totalCalories = 10 * weight + 6 * height - 5 * age - 161) * 1.7
+                totalCalories = 10 * weight + 6 * height - 5 * age + 261
             }
             else{
-                (totalCalories = 10 * weight + 6 * height - 5 * age - 161) * 1.1
+                totalCalories = 10 * weight + 6 * height - 5 * age - 161
             }
         }
         return totalCalories

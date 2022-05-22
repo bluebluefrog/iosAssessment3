@@ -46,7 +46,6 @@ class AddItemVC: UIViewController {
                 vc.exerciseList.append(Exercise(exerciseName: nameInput, calories: caloriesInput, img: UIImage(named:"unionSport.jpg")!))
             }
             self.navigationController?.pushViewController(vc, animated: true)
-            vc.navigationItem.setHidesBackButton(true, animated: true)
         }
     }
     
