@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C3509552834F59D0015ACC2 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3509542834F59D0015ACC2 /* UserData.swift */; };
 		2C3509642834F9390015ACC2 /* run.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C3509562834F9380015ACC2 /* run.jpg */; };
 		2C3509652834F9390015ACC2 /* dance.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C3509572834F9380015ACC2 /* dance.jpg */; };
 		2C3509662834F9390015ACC2 /* basketball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C3509582834F9380015ACC2 /* basketball.jpg */; };
@@ -69,7 +68,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C3509542834F59D0015ACC2 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		2C3509562834F9380015ACC2 /* run.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = run.jpg; sourceTree = "<group>"; };
 		2C3509572834F9380015ACC2 /* dance.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dance.jpg; sourceTree = "<group>"; };
 		2C3509582834F9380015ACC2 /* basketball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = basketball.jpg; sourceTree = "<group>"; };
@@ -146,7 +144,6 @@
 		2C3509532834F5840015ACC2 /* tool */ = {
 			isa = PBXGroup;
 			children = (
-				2C3509542834F59D0015ACC2 /* UserData.swift */,
 				2C35097628361D580015ACC2 /* CalorieCalculator.swift */,
 			);
 			path = tool;
@@ -384,7 +381,6 @@
 			files = (
 				2C6837B1282B9A4300251070 /* FoodVC.swift in Sources */,
 				2C68377728237A0800251070 /* HomeVC.swift in Sources */,
-				2C3509552834F59D0015ACC2 /* UserData.swift in Sources */,
 				2C6837B3282BA47400251070 /* Food.swift in Sources */,
 				2C68377328237A0800251070 /* AppDelegate.swift in Sources */,
 				2C350999283673A80015ACC2 /* AddItemVC.swift in Sources */,

@@ -54,21 +54,14 @@ class UserDataEditVC:  UIViewController {
                 UserDefaults.standard.set("female",forKey:"gender")
             }
             
-            let calories=CalorieCalculator.calorieCalculate()
-            UserDefaults.standard.set(calories,forKey:"availableCalories")
-            UserDefaults.standard.set(0,forKey: "breakfastTotalCalories")
-            UserDefaults.standard.set(0,forKey: "lunchTotalCalories")
-            UserDefaults.standard.set(0,forKey: "dinnerTotalCalories")
-            UserDefaults.standard.set(0,forKey: "snackTotalCalories")
-            UserDefaults.standard.set(0,forKey: "currentTotalConsumeCalories")
-            UserDefaults.standard.set(0,forKey: "currentTotalCalories")
-            UserDefaults.standard.set(1,forKey: "completeProfile")
-            
+            CalorieCalculator.resetAllCaloriesInfo()
             let vc = storyboard?.instantiateViewController(identifier: "UserProfileVC") as! UserProfileVC
             self.navigationController?.pushViewController(vc, animated: true)
             vc.navigationItem.setHidesBackButton(true, animated: true)
         }
     }
+    
+
     
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))

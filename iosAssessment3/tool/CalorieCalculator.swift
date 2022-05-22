@@ -17,7 +17,7 @@ class CalorieCalculator {
                 totalCalories = 10 * weight + 6 * height - 5 * age - 105
             }
             else if(target>weight){
-                totalCalories = 10 * weight + 6 * height - 5 * age + 205
+                totalCalories = 10 * weight + 6 * height - 5 * age + 105
             }
             else{
                 totalCalories = 10 * weight + 6 * height - 5 * age + 5
@@ -27,13 +27,27 @@ class CalorieCalculator {
                 totalCalories = 10 * weight + 6 * height - 5 * age - 261
             }
             else if(target>weight){
-                totalCalories = 10 * weight + 6 * height - 5 * age + 61
+                totalCalories = 10 * weight + 6 * height - 5 * age + 261
             }
             else{
                 totalCalories = 10 * weight + 6 * height - 5 * age - 161
             }
         }
         return totalCalories
+    }
+    
+    static func resetAllCaloriesInfo(){
+        
+        let calories=CalorieCalculator.calorieCalculate()
+        UserDefaults.standard.set(calories,forKey:"availableCalories")
+        UserDefaults.standard.set(0,forKey: "breakfastTotalCalories")
+        UserDefaults.standard.set(0,forKey: "lunchTotalCalories")
+        UserDefaults.standard.set(0,forKey: "dinnerTotalCalories")
+        UserDefaults.standard.set(0,forKey: "snackTotalCalories")
+        UserDefaults.standard.set(0,forKey: "currentTotalConsumeCalories")
+        UserDefaults.standard.set(0,forKey: "currentTotalCalories")
+        UserDefaults.standard.set(1,forKey: "completeProfile")
+        
     }
     
 }

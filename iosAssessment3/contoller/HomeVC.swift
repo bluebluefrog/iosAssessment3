@@ -35,6 +35,8 @@ class HomeVC: UIViewController {
         
         if(checkUserInfo()){
             
+            checkUpdateDate()
+            
             var availableCaloriesData = UserDefaults.standard.value(forKey: "availableCalories") as! Int
             var currentTotalCaloriesData = UserDefaults.standard.value(forKey: "currentTotalCalories") as! Int
             var currentTotalConsumeCaloriesData = UserDefaults.standard.value(forKey: "currentTotalConsumeCalories") as! Int
@@ -106,5 +108,20 @@ class HomeVC: UIViewController {
            return false
         }
         return true
+    }
+    
+    func checkUpdateDate(){
+        let dateData=UserDefaults.standard.value(forKey: "date")
+        let formatter=DateFormatter()
+        formatter.dateFormat="yyyy-MM-dd"
+        
+        if(dateData==nil){
+            let dateString=formatter.string(from: Date())
+            UserDefaults.standard.set(dateString,forKey: "date")
+        }else{
+            if(formatter.string(from: Date()) != (dateData as! String)){
+                CalorieCalculator.resetAllCaloriesInfo()
+            }
+        }
     }
 }
